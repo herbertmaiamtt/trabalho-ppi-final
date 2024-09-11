@@ -21,23 +21,45 @@ header{
     /* prende o header no topo */
     position: fixed;
     top: 0;
+    
+}
+
+.logo{
+    float: left;
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    line-height: 100px;
+    
 }
 
 #container-conteudo-principal{
+    
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     padding: 0 0 20px 0;
+    border-radius: 5px;
+    gap: 2rem 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
 }
 
-aside{
+ /* aside{
     background-color: var(--cor-aside);
     width: 250px;
     height: calc(100vh - 200px);
-    /* prende o aside na esquerda */
-    position: fixed;
+     /* prende o aside na esquerda */
+    /*position: fixed;
     left: 0;
-}
+} */
+
 
 main{
     width: calc(100% - 250px);
@@ -47,5 +69,54 @@ main{
 
 footer{
     background-color: var(--cor-footer);
-    height: 200px;
+    height: 50px;
+    color: black;
+    text-align: center;
+    
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.icon {
+    color: white;
+    padding: 30px;
+    float: right;
+
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    min-width: 250px;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+
+.login-main{
+    max-width: 300px;
+    padding: 25px;
+    margin: 150px auto;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 5px;
+
+}
+
+input,
+button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px grey;
 }

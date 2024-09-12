@@ -7,11 +7,16 @@
     --cor-fundo: #FFFFFF;
     --cor-header: #343434;
     --cor-aside: #F5F5F5;
-    --cor-footer: #D6D6D6;
+    --cor-footer: #343434;
 }
 
 body{
-    background-color: var(--cor-fundo);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
 }
 
 header{
@@ -62,20 +67,27 @@ header h1 {
 
 
 main{
-    width: calc(100% - 250px);
-    height: 100vh;
-    margin-left: 250px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
     background-color: var(--cor-footer);
-    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    color: white;
+   /* height: 50px;
     color: black;
     text-align: center;
     
     bottom: 0;
     box-sizing: border-box;
-    width: 100%;
+     */
 }
 
 .icon {
@@ -86,13 +98,14 @@ footer{
 }
 
 .item{
+    
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 1rem;
     border-radius: 20px;
-    min-width: 250px;
-    max-width: 350px;
+    min-width: 150px;
+    max-width: 250px;
     width: 100%;
     overflow: hidden;
     justify-content: space-between;

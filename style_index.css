@@ -102,6 +102,7 @@ footer{
 
 .login-main{
     max-width: 300px;
+    max-height: 250px;
     padding: 25px;
     margin: 150px auto;
     box-shadow: 5px 5px 15px black;
@@ -113,10 +114,35 @@ input,
 button {
     width: 100%;
     box-sizing: border-box;
+    margin: 10px;
     padding: 5px;
     
 }
 
 input:focus {
     box-shadow: 5px 5px 5px grey;
+}
+
+.h1-cadastro{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.h1-header{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cadastro-main{
+        max-width: 300px;
+        max-height: 400px;
+        padding: 25px;
+        margin: 150px auto;
+        box-shadow: 5px 5px 15px black;
+        border-radius: 5px;
 }

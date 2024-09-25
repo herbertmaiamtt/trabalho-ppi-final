@@ -157,39 +157,67 @@ footer{
 
 
 
-
-
-/*
-input,
-button {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 5px;
-    
+.body-pagInterna {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-input:focus {
-    box-shadow: 5px 5px 5px grey;
-}
-
-.h1-cadastro{
+.header-pagInterna {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
+    position: relative;
 }
 
-a {
+.h1-pagInterna {
+    margin-bottom: 10px;
+}
+
+#logoffBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#logoffBtn:hover {
+    background-color: #cc0000;
+}
+
+.main-pagInterna {
+    margin: 20px;
+}
+
+.h2-pagInterna {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.funcionalidades-pagInterna {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-func {
+    display: block;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
     text-decoration: none;
-    color: black;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
 }
 
-.cadastro-main{
-        max-width: 300px;
-        max-height: 400px;
-        padding: 25px;
-        margin: 150px auto;
-        box-shadow: 5px 5px 15px black;
-        border-radius: 5px;
+.btn-func:hover {
+    background-color: #0056b3;
 }
-*/

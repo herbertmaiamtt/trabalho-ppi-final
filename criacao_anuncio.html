@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Anúncio de Veículo</title>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body class="body-criacao">
+    <header class="header-anuncio">
+        <h1>Criação de Anúncio de Veículo</h1>
+    </header>
+
+    <main class="main-anuncio">
+        <form id="form-anuncio" class="form-anuncio">
+            <div class="form-group">
+                <label for="marca">Marca do Veículo:</label>
+                <input type="text" id="marca" name="marca" required>
+            </div>
+
+            <div class="form-group">
+                <label for="modelo">Modelo do Veículo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ano">Ano de Fabricação:</label>
+                <input type="number" id="ano" name="ano" min="1900" max="2024" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" name="cor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quilometragem">Quilometragem (km):</label>
+                <input type="number" id="quilometragem" name="quilometragem" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <!-- Adicione outros estados conforme necessário -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fotos">Fotos do Veículo (mínimo 3):</label>
+                <input type="file" id="fotos" name="fotos" accept="image/*" multiple required>
+            </div>
+
+            <button type="submit" class="botao-criacao">Criar Anúncio</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

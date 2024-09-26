@@ -231,3 +231,62 @@ footer{
 .btn-func:hover {
     background-color: #0056b3;
 }
+
+.body-criacao {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.header-anuncio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.main-anuncio {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-anuncio .form-group {
+    margin-bottom: 15px;
+}
+
+.form-anuncio label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-anuncio input,
+.form-anuncio select,
+.form-anuncio textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao-criacao {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botao-criacao:hover {
+    background-color: #218838;
+}

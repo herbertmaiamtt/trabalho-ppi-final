@@ -20,7 +20,7 @@
                 <!-- Item de cadastro da lista -->
                 <li>
                     <div id="div-cadastro">
-                        <a href="#">
+                        <a href="cadastro.html">
                             <p>Cadastrar</p>
                             <span class="material-symbols-outlined icon-register">how_to_reg</span>
                         </a>
@@ -40,17 +40,21 @@
     </header>
 
     <main>
-        <div id="formulario-login">
-            <div>
-                <label for="email-login">E-mail</label>
-                <input type="email" id="email-login" name="email-login">
+        <div id="container-formulario-login">    
+            <div id="container-imagem-h1">
+                <img src="imagens/user-login.png" id="user-login">
+                <h1>LOG IN</h1>
             </div>
-            <div>
-                <label for="senha-login">Senha</label>
-                <input type="senha" id="senha-login" name="senha-login">
-            </div>
-            <a href="#" id="botao-login">Entrar</a>
-        </div>       
+            <form id="formulario-login">
+                <div>
+                    <input type="email" id="email-login" name="email-login" placeholder="E-mail">
+                </div>
+                <div>
+                    <input type="senha" id="senha-login" name="senha-login" placeholder="Senha">
+                </div>
+                <a href="#" id="botao-login">Entrar</a>
+            </form>
+        </div>
      </main>   
 </body>
 </html>

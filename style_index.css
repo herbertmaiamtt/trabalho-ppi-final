@@ -21,6 +21,7 @@ body{
 }
 
 header{
+    z-index: 2;
     background-color: var(--cor-header);
     /*Componentes flex da tag header*/
     display: flex;
@@ -43,6 +44,7 @@ header{
         list-style-type: none;
         display: flex;
         align-items: center;
+        width:240px;
     }
 
         #lista-nav li{
@@ -52,33 +54,51 @@ header{
         #div-cadastro a{
             display: flex;
             align-items: center;
+            border-radius: 20px;
+            padding-left: 5px;
         }
 
         #div-cadastro p{
             color: var(--branco);
+            font-size: 16px;
         }
+
+        #div-cadastro a:hover{
+            background-color: var(--cor-footer);
+            transform: scale(1.02);
+            transition: 0.1s; 
+        }
+
         /*Relacionado ao link de login*/
         #div-login a{
             display: flex;
             align-items: center;
+            border-radius: 20px;
+            padding-left: 5px;
         }
 
         #div-login p{
             color: var(--branco);
+            font-size: 16px;
+        }
+
+        #div-login a:hover{
+            background-color: var(--cor-footer);
+            transform: scale(1.02);
+            transition: 0.1s; 
         }
 
         /*Ícone de login*/
         .icon-login{
             color: white;
-            padding: 10px;
+            padding: 5px;
             float: right;
         }
-        /*Ícone de registro*/
+        /*Ícone de cadastrp*/
         .icon-register{
             color: white;
-            padding: 10px;
+            padding: 5px;
             float: right;
-
         }
 
 /*
@@ -90,12 +110,47 @@ header h1 {
 main{
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
     margin: 0 auto;
     padding-top: 100px;
 }
+
+    #section-filtro{
+        background-color: var(--branco);
+        width: 80%;
+        height: 80px;
+        margin: 20px 0 0 0;
+        border-radius: 40px;
+    }
+        #form-filtro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;  
+            height: 100%;
+        }
+            #container-div-select-form{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+            }
+                .div-select-form label{
+                    font-family: Helvetica;
+                    font-size: 18px;
+                }
+                .div-select-form select{
+                    background-color: var(--cor-fundo);
+                    padding: 2px;
+                    border:transparent;
+                    border-radius: 7px;
+                    font-family: Helvetica;
+                    font-size: 16px;
+                }
+
     /*Container dentro da main onde estão os cards de anúncio de carros*/
     #container-conteudo-principal{   
         display: flex;
@@ -145,6 +200,12 @@ main{
                 padding-top: 5px;
                 font-size: 18px;
             }
+
+        .card:hover{
+            box-shadow: 0px 4px 7px var(--cor-footer);
+            transform: scale(1.01);
+            transition: 0.3s; 
+        }
 
 footer{
     background-color: var(--cor-footer);

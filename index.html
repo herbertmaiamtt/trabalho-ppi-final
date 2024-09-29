@@ -12,7 +12,9 @@
     <!-- Cabeçalho com o nav dentro -->
     <header>
         <!-- Logo -->  
-        <img src="publico/imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo">
+        <div id="container-logo"><a href="index.html"><img src="publico/imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo"></a></div>
+        <!-- Nome do Site -->
+        <h1>Car Shop HL</h1>
         <!-- Navegação -->
         <nav class="nav-principal">
             <!-- Link para login -->
@@ -20,7 +22,7 @@
                 <!-- Item de cadastro da lista -->
                 <li>
                     <div id="div-cadastro">
-                        <a href="cadastro.html">
+                        <a href="publico/cadastro.html">
                             <p>Cadastrar</p>
                             <span class="material-symbols-outlined icon-register">how_to_reg</span>
                         </a>
@@ -29,7 +31,7 @@
                 <!-- Item de login da lista -->
                 <li>
                     <div id="div-login">
-                        <a href="login.html" target="_blank">
+                        <a href="publico/login.html">
                             <p>Entrar</p>
                             <span class="material-symbols-outlined icon-login">account_circle</span>
                         </a>
@@ -249,7 +251,46 @@
     </main>
 
     <footer>
-        <p>Todos os direitos reservados</p>
+        <div id="div-footer-principal">
+            <div class="campo-footer">
+                <h2>ATENDIMENTO AO CLIENTE</h2>
+                <ul>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Assistência</a></li>
+                    <li><a href="#">Revisão</a></li>
+                    <li><a href="#">Recall</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>COMPRAR</h2>
+                <ul>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="#">Motos</a></li>
+                    <li><a href="#">Negociações</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>FALE CONOSCO</h2>
+                <ul>
+                    <li><a href="#">
+                        <address>compracarro@gmail.com</address>
+                    </a></li>
+                    <li><a href="#">
+                        <address>(34) 3232-3232</address>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>NOSSAS REDES</h2>
+                <ul>
+                    <div id="lista-redes">
+                        <li><a href="#"><img src="publico/imagens/instagram-icon.png" id="icon-instagram"></a></li>
+                        <li><a href="#"><img src="publico/imagens/facebook-icon.png" id="icon-facebook"></a></li>
+                        <li><a href="#"><img src="publico/imagens/youtube-icon.png" id="icon-youtube"></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

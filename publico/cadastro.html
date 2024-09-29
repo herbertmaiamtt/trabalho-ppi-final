@@ -12,7 +12,9 @@
     <!-- Cabeçalho com o nav dentro -->
     <header>
         <!-- Logo -->  
-        <img src="imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo">
+        <div id="container-logo"><a href="../index.html"><img src="imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo"></a></div>
+        <!-- Nome do Site -->
+        <h1>Car Shop HL</h1>
         <!-- Navegação -->
         <nav class="nav-principal">
             <!-- Link para login -->
@@ -29,7 +31,7 @@
                 <!-- Item de login da lista -->
                 <li>
                     <div id="div-login">
-                        <a href="login.html" target="_blank">
+                        <a href="login.html">
                             <p>Entrar</p>
                             <span class="material-symbols-outlined icon-login">account_circle</span>
                         </a>
@@ -39,24 +41,36 @@
         </nav>
     </header>
 
-    <main class="cadastro-main">
-        <label for="nome" class="usuario">Nome</label>
-        <input type="text" id="usuario" name="nomeLogin">
+    <main>
+        <div id="container-formulario-login">    
+            <div id="container-imagem-h1">
+                <img src="imagens/sign-in.png" id="user-login">
+                <h1>CADASTRO</h1>
+            </div>
+            <form id="formulario-cadastro">
+                <input type="text" id="nome" name="nomeCadastro" placeholder="Nome">
+                <input type="text" pattern = "\d{3}\.\d{3}\.\d{3}-\d{2}" id="cpf" name="cpfCadastro" required
+                    placeholder="XXX.XXX.XXX-XX" placeholder="CPF">
+                <input type="tel" id="telefone" name="telefoneCadastro" required placeholder="Telefone">
+                <input type="email" id="email" name="emailCadastro" required placeholder="E-mail">
+                <input type="password" id="senha" name="senhaCadastro" required placeholder="Senha">
+                <button class="cadastro-button">Cadastrar</button>
+            </form>
+        </div>
 
-        <label for="cpf">CPF</label>
-        <input type="text" pattern = "\d{3}\.\d{3}\.\d{3}-\d{2}" id="cpf" name="cpfLogin" required 
-            placeholder="XXX.XXX.XXX-XX">
-
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefoneLogin" required>
-
-        <label for="usuario" class="usuario">Email</label>
-        <input type="email" id="usuario" name="usuarioLogin" required>
-
-        <p><label for="senha" class="senha">Senha</label>
-        <input type="password" id="senha" name="senhaLogin" required></p>
-
-        <button class="login-button">
+        <!--
+        <form>
+            <input type="text" id="usuario" name="nomeLogin" placeholder="Nome">
+            <input type="text" pattern = "\d{3}\.\d{3}\.\d{3}-\d{2}" id="cpf" name="cpfLogin" required
+                placeholder="XXX.XXX.XXX-XX" placeholder="CPF">
+            <input type="tel" id="telefone" name="telefoneLogin" required placeholder="Telefone">
+            <input type="email" id="usuario" name="usuarioLogin" required placeholder="E-mail">
+            <input type="password" id="senha" name="senhaLogin" required placeholder="Senha">
+            <button class="login-button">
             <span class="material-symbols-outlined">login</span>
+        </form>
+        -->
+    </main>
+
 </body>
 </html>

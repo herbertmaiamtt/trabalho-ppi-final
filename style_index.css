@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 
 :root{
     --cor-fundo: #d3d3d3;
-    --cor-header: #343434;
+    --cor-header: #1A1A1A;
     --cor-footer: #565454;
     --branco: #ffffff;
 }
@@ -22,7 +23,7 @@ body{
 
 header{
     z-index: 2;
-    background-color: var(--cor-header);
+    background-image: linear-gradient(to left, #373737, var(--cor-header));
     /*Componentes flex da tag header*/
     display: flex;
     align-items: center;
@@ -35,9 +36,22 @@ header{
     top: 0;
     
 }
+    #container-logo{
+        width: 240px;
+    }
 
     #logo{
         width: 100px;
+    }
+
+    header h1{
+        width: 240px;
+        font-family: 'Times New Roman', Times, serif;
+        color:var(--branco);
+    }
+
+    .nav-principal{
+        width: 240px;
     }
 
     #lista-nav{
@@ -111,9 +125,9 @@ main{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 80%;
+    min-height: 100vh;
     margin: 0 auto;
     padding-top: 100px;
 }
@@ -122,7 +136,7 @@ main{
         background-color: var(--branco);
         width: 80%;
         height: 80px;
-        margin: 20px 0 0 0;
+        margin: 20px 0 40px 0;
         border-radius: 40px;
     }
         #form-filtro{
@@ -207,50 +221,55 @@ main{
             transition: 0.3s; 
         }
 
+/*------------------*/
+/*----- FOOTER -----*/
+/*------------------*/
+
 footer{
     background-color: var(--cor-footer);
     width: 100%;
     text-align: center;
     color: white;
-    position: fixed;
-    bottom: 0;
 }
 
-
-
-
-
-/*
-input,
-button {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 5px;
-    
+#div-footer-principal{
+    display: flex;
+    justify-content: space-around;
+    min-height: 250px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, var(--cor-footer), var(--cor-header));
 }
-
-input:focus {
-    box-shadow: 5px 5px 5px grey;
+.campo-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 10px 20px;
 }
-
-.h1-cadastro{
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
+    .campo-footer h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+    .campo-footer li{
+        padding: 10px;
+        list-style-type: none;
+        text-align: start;
+    }
+    .campo-footer a{
+        text-decoration: none;
+        color: var(--branco);
+    }
+    .campo-footer a:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    .campo-footer address:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    #lista-redes{
+        display: flex;
+    }
+#icon-instagram, #icon-facebook, #icon-youtube{
+    width: 20px;
+    height: 20px;
 }
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.cadastro-main{
-        max-width: 300px;
-        max-height: 400px;
-        padding: 25px;
-        margin: 150px auto;
-        box-shadow: 5px 5px 15px black;
-        border-radius: 5px;
-}
-*/

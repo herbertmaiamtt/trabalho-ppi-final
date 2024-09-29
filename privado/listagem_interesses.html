@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Anúncios</title>
+    <link rel="stylesheet" href="style_listagem.css">
+</head>
+<body>
+    <header>
+        <div id="container-logo"><a href="index.html"><img src="../publico/imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo"></a></div>
+        <h1>Meus Anúncios</h1>
+    </header>
+
+    <main class="listagem-anuncios">
+        <div class="anuncio-card">
+            <img src="../publico/imagens/carro.jpg" alt="Foto do Veículo" class="foto-veiculo">
+            <div class="detalhes-anuncio">
+                <h2>Marca: Toyota</h2>
+                <p>Modelo: Corolla</p>
+                <p>Ano: 2020</p>
+            </div>
+            <div class="acoes-anuncio">
+                <a href="detalhes-anuncio.html" class="botao-detalhes">Ver Detalhes</a>
+                <a href="interesses-anuncio.html" class="botao-interesses">Ver Interesses</a>
+                <button class="botao-excluir" onclick="excluirAnuncio()">Excluir</button>
+            </div>
+        </div>
+
+        <!-- Repetir para outros anúncios -->
+        <div class="anuncio-card">
+            <img src="../publico/imagens/carro.jpg" alt="Foto do Veículo" class="foto-veiculo">
+            <div class="detalhes-anuncio">
+                <h2>Marca: Ford</h2>
+                <p>Modelo: Focus</p>
+                <p>Ano: 2018</p>
+            </div>
+            <div class="acoes-anuncio">
+                <a href="detalhes-anuncio.html" class="botao-detalhes">Ver Detalhes</a>
+                <a href="interesses-anuncio.html" class="botao-interesses">Ver Interesses</a>
+                <button class="botao-excluir" onclick="excluirAnuncio()">Excluir</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function excluirAnuncio() {
+            if (confirm('Tem certeza que deseja excluir este anúncio?')) {
+                // Aqui você pode adicionar a lógica de exclusão
+                alert('Anúncio excluído com sucesso!');
+            }
+        }
+    </script>
+</body>
+</html>

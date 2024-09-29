@@ -12,9 +12,9 @@
     <!-- Cabeçalho com o nav dentro -->
     <header>
         <!-- Logo -->  
-        <a href="index.html">
-            <img src="publico/imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo">
-        </a>
+        <div id="container-logo"><a href="index.html"><img src="publico/imagens/logo/logo-shop-car-hl-03.png" alt="Logo da Car Shop HL" id="logo"></a></div>
+        <!-- Nome do Site -->
+        <h1>Car Shop HL</h1>
         <!-- Navegação -->
         <nav class="nav-principal">
             <!-- Link para login -->
@@ -22,7 +22,7 @@
                 <!-- Item de cadastro da lista -->
                 <li>
                     <div id="div-cadastro">
-                        <a href="cadastro.html">
+                        <a href="publico/cadastro.html">
                             <p>Cadastrar</p>
                             <span class="material-symbols-outlined icon-register">how_to_reg</span>
                         </a>
@@ -31,7 +31,7 @@
                 <!-- Item de login da lista -->
                 <li>
                     <div id="div-login">
-                        <a href="login.html" target="_blank">
+                        <a href="publico/login.html">
                             <p>Entrar</p>
                             <span class="material-symbols-outlined icon-login">account_circle</span>
                         </a>
@@ -43,6 +43,88 @@
 
     <main>
  
+        <section id="section-filtro">
+            <form id="form-filtro">
+                <div id="container-div-select-form">
+                    <div class="div-select-form">
+                        <label>Marca</label>
+                        <select>
+                            <option value="">Selecionar</option>
+                            <option>Volkswagen</option>
+                            <option>Ford</option>
+                            <option>Fiat</option>
+                            <option>Hyundai</option>
+                            <option>Chevrolet</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                            <option>Nissan</option>
+                            <option>Kia</option>
+                            <option>Jeep</option>
+                            <option>Peugeot</option>
+                            <option>Citroen</option>
+                            <option>Audi</option>
+                        </select>
+                    </div>
+                    <div class="div-select-form">
+                        <label>Modelo</label>
+                        <select>
+                            <option value="">Selecionar</option>
+                            <!--Modelos Volkswagen-->
+                            <option>Polo</option>
+                            <option>CrossFox</option>
+                            <!--Modelos Ford-->
+                            <option>Ford Ka</option>
+                            <option>Explorer</option>
+                            <!--Modelos Fiat-->
+                            <option>Mobi</option>
+                            <option>Toro</option>
+                            <!--Modelos Hyundai-->
+                            <option>Tucson</option>
+                            <option>Creta</option>
+                            <!--Modelos Chevrolet-->
+                            <option>Onix</option>
+                            <option>Tracker</option>
+                            <!--Modelos Toyota-->
+                            <option>Corolla Sedan</option>
+                            <option>Hilux</option>
+                            <!--Modelos Honda-->
+                            <option>Civic</option>
+                            <option>Fit</option>
+                            <!--Modelos Nissan-->
+                            <option>Kicks</option>
+                            <option>Versa</option>
+                            <!--Modelos Kia-->
+                            <option>Sportage</option>
+                            <option>Carnival</option>
+                            <!--Modelos Jeep-->
+                            <option>Renegade</option>
+                            <option>Compass</option>
+                            <!--Modelos Peugeot-->
+                            <option>Peugeot 208</option>
+                            <option>Peugeot Expert</option>
+                            <!--Modelos Citroen-->
+                            <option>C3</option>
+                            <option>C4</option>
+                            <!--Modelos Audi-->
+                            <option>A1</option>
+                            <option>RS e-tron GT</option>
+                        </select>
+                    </div>
+                    <div class="div-select-form">
+                        <label>Cidade</label>
+                        <select>
+                            <option value="">Selecionar</option>
+                            <option>Uberlândia</option>
+                            <option>Uberaba</option>
+                            <option>Araguari</option>
+                            <option>Ituiutaba</option>
+                            <option>Canápolis</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </section>
+
         <div id="container-conteudo-principal">
             <div class="card">
                 <div class="barra-superior-card"></div>
@@ -165,11 +247,50 @@
                 </div>
             </div>
         </div>
+
     </main>
-    
 
     <footer>
-        <p>Todos os direitos reservados</p>
+        <div id="div-footer-principal">
+            <div class="campo-footer">
+                <h2>ATENDIMENTO AO CLIENTE</h2>
+                <ul>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Assistência</a></li>
+                    <li><a href="#">Revisão</a></li>
+                    <li><a href="#">Recall</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>COMPRAR</h2>
+                <ul>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="#">Motos</a></li>
+                    <li><a href="#">Negociações</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>FALE CONOSCO</h2>
+                <ul>
+                    <li><a href="#">
+                        <address>compracarro@gmail.com</address>
+                    </a></li>
+                    <li><a href="#">
+                        <address>(34) 3232-3232</address>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>NOSSAS REDES</h2>
+                <ul>
+                    <div id="lista-redes">
+                        <li><a href="#"><img src="publico/imagens/instagram-icon.png" id="icon-instagram"></a></li>
+                        <li><a href="#"><img src="publico/imagens/facebook-icon.png" id="icon-facebook"></a></li>
+                        <li><a href="#"><img src="publico/imagens/youtube-icon.png" id="icon-youtube"></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

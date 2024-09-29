@@ -15,3 +15,9 @@ document.getElementById('form-anuncio').addEventListener('submit', function(even
     alert("Anúncio criado com sucesso!");
     // Aqui você pode fazer o processamento dos dados ou enviar para o servidor
 });
+
+document.getElementById('logoffBtn').addEventListener('click', function() {
+    alert("Você foi deslogado.");
+    window.location.href = "login.html";  // Redireciona para a página de login
+});
+

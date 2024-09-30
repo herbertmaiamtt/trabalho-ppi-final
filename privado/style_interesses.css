@@ -1,0 +1,197 @@
+/* Estilos para a página de listagem de interesses */
+:root{
+    --cor-fundo: #d3d3d3;
+    --cor-header: #1A1A1A;
+    --cor-footer: #565454;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    
+}
+
+header{
+    z-index: 2;
+    background-image: linear-gradient(to left, #373737, var(--cor-header));
+    /*Componentes flex da tag header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Largura e altura do header*/
+    width: 100%;
+    height: 100px;
+    /* prende o header no topo */
+    position: fixed;
+    top: 0;
+    
+}
+    #container-logo{
+        width: 240px;
+    }
+
+    #logo{
+        width: 100px;
+    }
+
+    header h1{
+        width: 240px;
+        font-family: 'Times New Roman', Times, serif;
+        color:var(--branco);
+    }
+
+    .nav-principal{
+        width: 240px;
+    }
+
+    #lista-nav{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        width:240px;
+    }
+
+        #lista-nav li{
+            padding: 10px;
+        }
+        /*Relacionado ao link de cadastro*/
+        #div-cadastro a{
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+
+        #div-cadastro p{
+            color: var(--branco);
+            font-size: 16px;
+        }
+
+        #div-cadastro a:hover{
+            background-color: var(--cor-footer);
+            transform: scale(1.02);
+            transition: 0.1s; 
+        }
+
+        /*Relacionado ao link de login*/
+        #div-login a{
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+
+        #div-login p{
+            color: var(--branco);
+            font-size: 16px;
+        }
+
+        #div-login a:hover{
+            background-color: var(--cor-footer);
+            transform: scale(1.02);
+            transition: 0.1s; 
+        }
+
+        /*Ícone de login*/
+        .icon-login{
+            color: white;
+            padding: 5px;
+            float: right;
+        }
+        /*Ícone de cadastrp*/
+        .icon-register{
+            color: white;
+            padding: 5px;
+            float: right;
+        }
+
+
+h1 {
+    margin: 0;
+}
+
+#section-listagem {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-veiculo {
+    margin-bottom: 1.5rem;
+}
+
+#tabela-interesses {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabela-interesses th,
+#tabela-interesses td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabela-interesses th {
+    background-color: #007bff;
+    color: white;
+}
+
+#tabela-interesses tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer{
+    background-color: var(--cor-footer);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#div-footer-principal{
+    display: flex;
+    justify-content: space-around;
+    min-height: 250px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, var(--cor-footer), var(--cor-header));
+}
+.campo-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 10px 20px;
+}
+    .campo-footer h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+    .campo-footer li{
+        padding: 10px;
+        list-style-type: none;
+        text-align: start;
+    }
+    .campo-footer a{
+        text-decoration: none;
+        color: var(--branco);
+    }
+    .campo-footer a:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    .campo-footer address:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    #lista-redes{
+        display: flex;
+    }
+#icon-instagram, #icon-facebook, #icon-youtube{
+    width: 20px;
+    height: 20px;
+}

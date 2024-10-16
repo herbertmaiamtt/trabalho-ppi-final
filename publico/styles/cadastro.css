@@ -218,3 +218,162 @@ main{
     color: var(--branco);
     transition: 0.3s;
 }
+
+/*------------------*/
+/*----- FOOTER -----*/
+/*------------------*/
+
+footer{
+    background-color: var(--cor-footer);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#div-footer-principal{
+    display: flex;
+    justify-content: space-around;
+    min-height: 250px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, var(--cor-footer), var(--cor-header));
+}
+.campo-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 10px 20px;
+}
+    .campo-footer h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+    .campo-footer li{
+        padding: 10px;
+        list-style-type: none;
+        text-align: start;
+    }
+    .campo-footer a{
+        text-decoration: none;
+        color: var(--branco);
+    }
+    .campo-footer a:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    .campo-footer address:hover{
+        border-bottom: solid 1px var(--branco);
+        transition: 1s;
+    }
+    #lista-redes{
+        display: flex;
+    }
+#icon-instagram, #icon-facebook, #icon-youtube{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 1000px){
+/*------------------*/
+/*----- FOOTER -----*/
+/*------------------*/
+.campo-footer{
+    padding: 40px 10px 10px 10px;
+}
+    .campo-footer h2{
+        font-size: 14px;
+    }
+    .campo-footer a{
+        font-size: 14px;
+    } 
+}
+
+@media (max-width: 700px){
+    header{
+        /*Componentes flex da tag header*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*Largura e altura do header*/
+        width: 100%;
+        height: 100px;
+        /* prende o header no topo */
+        position: fixed;
+        top: 0;
+        
+    }
+        #logo{
+            display: none;
+        }
+    
+        header h1{
+            width: 240px;
+            text-align: center;
+        }
+    
+        .nav-principal{
+            width: auto;
+        }
+    
+        #lista-nav{
+            width:auto;
+        }
+    
+            #lista-nav li{
+                padding: 10px;
+            }
+            /*Relacionado ao link de cadastro*/
+            #div-cadastro a{
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                padding-left: 5px;
+                text-decoration: none;
+            }
+    
+            #div-cadastro p{
+                color: var(--branco);
+                font-size: 16px;
+            }
+    
+            #div-cadastro a:hover{
+                transform: scale(1.01);
+            }
+    
+            #div-login a:hover{
+                transform: scale(1.01);
+            }
+
+/*------------------*/    
+/*----- FOOTER -----*/
+/*------------------*/    
+#div-footer-principal{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.campo-footer{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: solid 1px var(--cor-fundo);
+}
+.campo-footer:last-of-type{
+    border: none;
+}
+    .campo-footer h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .campo-footer li{
+        text-align: center;
+    }
+    .campo-footer a{
+        font-size: 16px;
+    }
+#icon-instagram, #icon-facebook, #icon-youtube{
+    width: 30px;
+    height: 30px;
+}
+}

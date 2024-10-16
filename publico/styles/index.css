@@ -70,6 +70,7 @@ header{
             align-items: center;
             border-radius: 20px;
             padding-left: 5px;
+            text-decoration: none;
         }
 
         #div-cadastro p{
@@ -89,6 +90,7 @@ header{
             align-items: center;
             border-radius: 20px;
             padding-left: 5px;
+            text-decoration: none;
         }
 
         #div-login p{
@@ -115,11 +117,9 @@ header{
             float: right;
         }
 
-/*
-header h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-}
-*/
+/*----------------*/
+/*----- MAIN -----*/
+/*----------------*/
 
 main{
     flex: 1;
@@ -155,6 +155,8 @@ main{
                 .div-select-form label{
                     font-family: Helvetica;
                     font-size: 18px;
+                    font-weight: bold;
+                    color: var(--cor-footer);
                 }
                 .div-select-form select{
                     background-color: var(--cor-fundo);
@@ -169,7 +171,7 @@ main{
     #container-conteudo-principal{   
         display: flex;
         flex-direction: row;
-        padding: 20px 0 20px 0;
+        padding: 20px 0 60px 0;
         border-radius: 5px;
         gap: 2rem 1rem;
         flex-wrap: wrap;
@@ -272,4 +274,268 @@ footer{
 #icon-instagram, #icon-facebook, #icon-youtube{
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 1000px){
+/*----------------*/
+/*----- MAIN -----*/
+/*----------------*/
+    #section-filtro{
+        width: 100%;
+    }
+                .div-select-form label{
+                    font-family: Helvetica;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color:var(--cor-footer);
+                }
+                .div-select-form select{
+                    padding: 3px;
+                    font-size: 14px;
+                }
+
+    #container-conteudo-principal{  
+        padding: 20px 0 60px 0;
+        gap: 3rem 3rem;
+    }    
+
+/*------------------*/
+/*----- FOOTER -----*/
+/*------------------*/
+    .campo-footer{
+        padding: 40px 10px 10px 10px;
+    }
+        .campo-footer h2{
+            font-size: 14px;
+        }
+        .campo-footer a{
+            font-size: 14px;
+        }    
+}
+
+@media (max-width: 700px){
+/*------------------*/
+/*----- HEADER -----*/
+/*------------------*/
+    header{
+        /*Componentes flex da tag header*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*Largura e altura do header*/
+        width: 100%;
+        height: 100px;
+        /* prende o header no topo */
+        position: fixed;
+        top: 0;
+        
+    }
+        #logo{
+            display: none;
+        }
+    
+        header h1{
+            width: 240px;
+            text-align: center;
+        }
+    
+        .nav-principal{
+            width: auto;
+        }
+    
+        #lista-nav{
+            width:auto;
+        }
+    
+            #lista-nav li{
+                padding: 10px;
+            }
+            /*Relacionado ao link de cadastro*/
+            #div-cadastro a{
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                padding-left: 5px;
+                text-decoration: none;
+            }
+    
+            #div-cadastro p{
+                color: var(--branco);
+                font-size: 16px;
+            }
+    
+            #div-cadastro a:hover{
+                transform: scale(1.01);
+            }
+    
+            #div-login a:hover{
+                transform: scale(1.01);
+            }
+/*----------------*/
+/*----- MAIN -----*/
+/*----------------*/
+main{
+    width: 90%;
+}
+
+    #section-filtro{
+        width: 100%;
+        height: 60px;
+    }
+                .div-select-form label{
+                    font-size: 14px;
+                }
+                .div-select-form select{
+                    padding: 1px;
+                    font-size: 12px;
+                }
+
+#container-conteudo-principal{   
+gap: 2rem 1rem;
+}
+
+.card{
+    min-width: 130px;
+    max-width: 230px;
+}
+    .imagem-carro{
+        width: 230px;
+        height: 130px;
+    }
+    .carro-anunciado h1{
+        font-size: 18px;
+    }
+    .especificacoes-carro-anunciado p{
+        font-size: 13px;
+    }
+    .especificacoes-carro-anunciado p:last-child{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .card:hover{
+        box-shadow: 0px 3px 5px var(--cor-footer);
+    }
+
+/*------------------*/    
+/*----- FOOTER -----*/
+/*------------------*/    
+    #div-footer-principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .campo-footer{
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: solid 1px var(--cor-fundo);
+    }
+    .campo-footer:last-of-type{
+        border: none;
+    }
+        .campo-footer h2{
+            font-size: 16px;
+            text-align: center;
+        }
+        .campo-footer li{
+            text-align: center;
+        }
+        .campo-footer a{
+            font-size: 16px;
+        }
+    #icon-instagram, #icon-facebook, #icon-youtube{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        width: 100%;
+    }
+    
+        #section-filtro{
+            width: 100%;
+            height: 80px;
+            border-radius: 0;
+            margin-top: 0;
+        }
+                #container-div-select-form{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+                .div-select-form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100px;
+                }
+                    .div-select-form label{
+                        font-family: Helvetica;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: var(--cor-footer);
+                    }
+                    .div-select-form select{
+                        font-size: 14px;
+                    }
+
+#container-conteudo-principal{   
+display: flex;
+flex-direction: row;
+padding: 20px 0 60px 0;
+border-radius: 5px;
+gap: 4rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 300px;
+}
+    /*Div da barra superior de cor cinza*/
+    .barra-superior-card{
+        background-color: var(--cor-header);
+        height: 20px;
+        border-radius: 10px 10px 0 0;
+    }
+    /*Apenas o arquivo de imagem do carro*/
+    .imagem-carro{
+        width: 280px;
+        height: 178px;
+    }
+    /*Div com imagem e nome do carro*/
+    .carro-anunciado h1{
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    /*Div com especificações do carro*/
+    .especificacoes-carro-anunciado{
+        padding-bottom: 5px;
+    }
+    .especificacoes-carro-anunciado p{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .especificacoes-carro-anunciado p:last-child{ /*Modifica o padding e a cor do último p da div*/
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+.card:hover{
+    box-shadow: 0px 4px 7px var(--cor-footer);
+    transform: scale(1.01);
+    transition: 0.3s; 
+}
+                
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pag-carro.css">
+    <link rel="stylesheet" href="styles/pag-carro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Página Carro</title>
@@ -42,65 +42,98 @@
     </header>
 
     <main>
-        <section>
-            <div class="container-img-primaria">
-                <img src="imagens/carro.jpg" class="img-carro-primaria">
-            </div>
-            <div class="container-img-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-                <img src="imagens/carro.jpg" class="img-carro-secundaria">
-            </div>
-        </section>
-
         <article>
-            <div id="info-carro">
-                <h1>Nome do carro muito bom</h1>
-                <p>R$59.999,00</p>
-                <h2>Ficha Técnica</h2>
-                <ul>
+            <section id="section-descricao-carro">
+                <h2>Modelo do veículo</h2>
+                <div id="div-img-carro">
+                    <img src="imagens/carro.jpg" class="img-carro">
+                    <img src="imagens/carro.jpg" class="img-carro">
+                    <img src="imagens/carro.jpg" class="img-carro">
+                </div>
+                <ul id="lista-informacao-carro">
                     <li>
-                        <h3>Ano</h3>
-                        <p class="p-info">2024/2024</p>
+                        <h3>Marca:</h3>
+                        <p>Marca do veículo</p>
                     </li>
                     <li>
-                        <h3>Kilometragem</h3>
-                        <p>20.000km</p>
+                        <h3>Ano:</h3>
+                        <p>2022</p>
                     </li>
                     <li>
-                        <h3>Motor</h3>
-                        <p>2.0</p>
+                        <h3>Quilometragem:</h3>
+                        <p>15.000km</p>
                     </li>
                     <li>
-                        <h3>Combustível</h3>
-                        <p>Flex</p>
-                    </li>
-                    <li>
-                        <h3>Cor</h3>
+                        <h3>Cor:</h3>
                         <p>Branco</p>
                     </li>
                     <li>
-                        <h3>Portas</h3>
-                        <p>4</p>
-                    </li>
-                    <li>
-                        <h3>Transmissão</h3>
-                        <p>Automático</p>
+                        <h3>Descrição:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio perferendis eos eum voluptas dolorem quidem accusantium corporis! Perspiciatis maxime iure laudantium quas explicabo corrupti animi sit mollitia voluptatum consectetur.</p>
                     </li>
                 </ul>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique natus fugiat ipsam mollitia voluptatem, inventore ad sequi, facilis consequuntur porro repudiandae placeat voluptas sed consequatur voluptates laboriosam aspernatur quod?
-                </p>
-            </div>
-
-            <form>
-
-            </form>
+            </section>
+            <section id="section-formulario">
+                <form>
+                    <div>
+                        <label>Nome completo:</label>
+                        <input type="text" name="nome-usr" id="nome-usr" placeholder="Nome:" required>
+                    </div>
+                    <div>
+                        <label>Telefone:</label>
+                        <input type="tel" name="telefone-usr" id="telefone-usr" placeholder="Telefone:" required>
+                    </div>
+                    <div>
+                        <label>Deixe uma mensagem:</label>
+                        <textarea id="mensagem-interesse" name="mensagem-interesse" rows="4" maxlength="240" required></textarea>
+                    </div>
+                    <button id="botao-enviar">ENVIAR</button>
+                </form>
+            </section>
         </article>
-
     </main>
+
+    <footer>
+        <div id="div-footer-principal">
+            <div class="campo-footer">
+                <h2>ATENDIMENTO AO CLIENTE</h2>
+                <ul>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Assistência</a></li>
+                    <li><a href="#">Revisão</a></li>
+                    <li><a href="#">Recall</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>COMPRAR</h2>
+                <ul>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="#">Motos</a></li>
+                    <li><a href="#">Negociações</a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>FALE CONOSCO</h2>
+                <ul>
+                    <li><a href="#">
+                        <address>compracarro@gmail.com</address>
+                    </a></li>
+                    <li><a href="#">
+                        <address>(34) 3232-3232</address>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="campo-footer">
+                <h2>NOSSAS REDES</h2>
+                <ul>
+                    <div id="lista-redes">
+                        <li><a href="#"><img src="../publico/imagens/icons/instagram-icon.png" id="icon-instagram"></a></li>
+                        <li><a href="#"><img src="../publico/imagens/icons/facebook-icon.png" id="icon-facebook"></a></li>
+                        <li><a href="#"><img src="../publico/imagens/icons/youtube-icon.png" id="icon-youtube"></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
